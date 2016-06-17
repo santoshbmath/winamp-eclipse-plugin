@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Winamp Plugin for eclipse
+Bundle-SymbolicName: player.plugin;singleton:=true
+Bundle-Version: 1.0.2
+Bundle-Activator: player.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Santosh Math
+Bundle-ClassPath: lib/java_mp3.jar,
+ lib/JavaWinampAPI.jar,
+ .

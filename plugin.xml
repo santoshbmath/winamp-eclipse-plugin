@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="player.actionSet"
+            label="Player Action Set"
+            visible="true">
+         <menu
+               id="player.Menu"
+               label="Player Menu">
+            <separator
+                  name="mpGroup">
+            </separator>
+         </menu>
+         <action
+               class="player.plugin.actions.NextAction"
+               icon="icons/skip_forward.png"
+               id="player.actions.NextAction"
+               label="Next"
+               toolbarPath="mpGroup"
+               tooltip="Next">
+         </action>
+         <action
+               class="player.plugin.actions.StopAction"
+               icon="icons/stop.png"
+               id="player.actions.StopAction"
+               label="Stop"
+               style="push"
+               toolbarPath="mpGroup"
+               tooltip="Stop">
+         </action>
+         <action
+               class="player.plugin.actions.PauseAction"
+               icon="icons/pause.png"
+               id="player.actions.PauseAction"
+               label="Pause"
+               toolbarPath="mpGroup"
+               tooltip="Pause">
+         </action>
+         <action
+               class="player.plugin.actions.PlayAction"
+               icon="icons/play.png"
+               id="player.actions.PlayAction"
+               label="Play"
+               toolbarPath="mpGroup"
+               tooltip="Play">
+         </action>
+         <action
+               class="player.plugin.actions.PreviousAction"
+               icon="icons/skip_backward.png"
+               id="player.actions.PrevAction"
+               label="Previous"
+               toolbarPath="mpGroup"
+               tooltip="Previous">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="player"
+            name="Media Player">
+      </category>
+      <view
+            category="player"
+            class="player.plugin.views.PlaylistView"
+            icon="icons/winamp_icon.jpg"
+            id="player.views.PlaylistView"
+            name="Winamp"
+            restorable="false">
+      </view>
+   </extension>
+
+</plugin>
